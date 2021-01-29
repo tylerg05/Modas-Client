@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODAS</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <style>
+    #wrapper {
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+    }
+    #pageNo {
+      display: inline;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr class="table-success">
+        <th>Flagged</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <button type="button" id="firstPageBtn" class="btn btn-outline-secondary"><i class="fas fa-angle-double-left"></i> First</button>
+      </div>
+      <div class="col-sm">
+        <button type="button" id="prevPageBtn" class="btn btn-outline-secondary"><i class="fas fa-angle-left"></i> Prev</button>
+      </div>
+      <div class="col-sm">
+        <p id="pageNo"></p>
+      </div>
+      <div class="col-sm">
+        <button type="button" id="nextPageBtn" class="btn btn-outline-secondary">Next <i class="fas fa-angle-right"></i></button>
+      </div>
+      <div class="col-sm">
+        <button type="button" id="lastPageBtn" class="btn btn-outline-secondary">Last <i class="fas fa-angle-double-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <!-- jQuery framework -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- custom javascript -->
+  <script src="client.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/cbcc843af2.js" crossorigin="anonymous"></script>
+</body>
+</html>
